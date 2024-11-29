@@ -30,7 +30,7 @@ class TumorClassifier(nn.Module):
 @st.cache_resource  
 def load_model():
     model = TumorClassifier(num_classes=4)
-    model = torch.load("/media/husnain/nain/Programming/Python/UNI/Brain-Tumor/best-model-brain-tumor.pt")  
+    model = torch.load("best-model-brain-tumor.pt")  
     model.eval()  
     return model
 
